@@ -1,0 +1,20 @@
+﻿<Window x:Class="Klausur.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Klausur"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="750">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <Label Width="125" />
+            <Label Name="lblFrei" Content="Fuehrerscheinfrei" Width="350"/>
+            <Label Name="lblNichtFrei" Content="Fuehrerscheinpflichtig" Width="150" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <ListBox x:Name="listBoxFuehrerscheinfrei" HorizontalAlignment="Left" Height="250" Margin="10,10,0,0" VerticalAlignment="Top" Width="350"/>
+            <ListBox x:Name="listBoxFuehrerscheinpflichtig" HorizontalAlignment="Right" Height="250" Margin="0,10,10,0" VerticalAlignment="Top" Width="350"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
