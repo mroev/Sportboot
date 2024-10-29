@@ -7,11 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="750">
     <StackPanel Orientation="Vertical">
-        <StackPanel Orientation="Horizontal">
+        <!-- Checkbox zum Filtern der Boote hinzufügen -->
+        <CheckBox x:Name="checkBoxFuehrerscheinpflichtig" Content="Nur führerscheinpflichtige Boote anzeigen" HorizontalAlignment="Left" Margin="10,10,0,0"/>
+
+        <!-- Button zum Starten der Ausgabe hinzufügen -->
+        <Button x:Name="btnStartAusgabe" Content="Ausgabe starten" HorizontalAlignment="Left" Margin="10,10,0,0" Width="150" Click="btnStartAusgabe_Click"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
             <Label Width="125" />
             <Label Name="lblFrei" Content="Fuehrerscheinfrei" Width="350"/>
             <Label Name="lblNichtFrei" Content="Fuehrerscheinpflichtig" Width="150" />
         </StackPanel>
+
         <StackPanel Orientation="Horizontal">
             <ListBox x:Name="listBoxFuehrerscheinfrei" HorizontalAlignment="Left" Height="250" Margin="10,10,0,0" VerticalAlignment="Top" Width="350"/>
             <ListBox x:Name="listBoxFuehrerscheinpflichtig" HorizontalAlignment="Right" Height="250" Margin="0,10,10,0" VerticalAlignment="Top" Width="350"/>
